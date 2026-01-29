@@ -4,12 +4,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Fortune</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; color:#222; }
+    header { background:#f7f7f7; padding:1rem; text-align:center; }
+    .container { max-width:1000px; margin:1.5rem auto; padding:0 1rem; }
+    .hero { position:relative; text-align:center; color:white; }
+    .hero img { width:100%; height:auto; display:block; border-radius:6px; }
+    .hero h1 { position:absolute; left:1rem; bottom:1rem; margin:0; background:rgba(0,0,0,0.5); padding:0.5rem 1rem; border-radius:4px; }
+    .intro { margin:1rem 0; font-size:1.05rem; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-top:1rem; }
+    .gallery img { width:100%; height:auto; border-radius:6px; display:block; }
+    footer { text-align:center; margin:2rem 0; color:#666; font-size:0.9rem; }
+    a.contact { color:#0066cc; text-decoration:none; }
+  </style>
 </head>
 <body>
-  <main>
-    <h1>Fortune</h1>
-    <p>Nekka is the manager of the company. We advertise businesses and build websites.</p>
-    <p>Contact Dizzar Mw: <a href="mailto:desiremapira@gmail.com">desiremapira@gmail.com</a> or <a href="tel:0882772100">0882772100</a></p>
+  <header>
+    <div class="container">
+      <h2>Fortune</h2>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="https://source.unsplash.com/1200x600/?african,entrepreneur,portrait" alt="African entrepreneur" />
+      <h1>Nekka — We advertise businesses and build websites</h1>
+    </section>
+
+    <section class="intro">
+      <p>Nekka is the manager of the company. We advertise businesses and build websites tailored to local markets in Africa.</p>
+      <p>Contact Dizzar Mw: <a class="contact" href="mailto:desiremapira@gmail.com">desiremapira@gmail.com</a> or <a class="contact" href="tel:0882772100">0882772100</a></p>
+    </section>
+
+    <section aria-label="Gallery" class="gallery">
+      <img src="https://source.unsplash.com/600x400/?black,people,team" alt="Black team working together" />
+      <img src="https://source.unsplash.com/600x400/?african,office,business" alt="African business professionals in an office" />
+      <img src="https://source.unsplash.com/600x400/?small,business,shop,africa" alt="Small business storefront in Africa" />
+      <img src="https://source.unsplash.com/600x400/?african,market,entrepreneurs" alt="African market entrepreneurs" />
+    </section>
+
+    <section class="intro">
+      <h3>Services</h3>
+      <ul>
+        <li>Business advertising and marketing</li>
+        <li>Custom website design and development</li>
+        <li>Local market targeting and consultation</li>
+      </ul>
+    </section>
+
   </main>
+
+  <footer>
+    <p>Images via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>. Attribution appreciated.</p>
+  </footer>
 </body>
 </html>
